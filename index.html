@@ -2,74 +2,43 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Baby Shower - Maia Sofía</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Te invito a mi Baby Shower!</title>
 <style>
-    body {
-        background-color: #fffdb7;
-        color: black;
-        font-family: 'Open Sans', sans-serif;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-    input[type="checkbox"], input[type="text"], input[type="date"] {
+    body, html {
+        height: 100%;
         margin: 0;
-        padding: 4px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #fffdb7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .invitation-container {
+        position: relative;
         width: 100%;
-        box-sizing: border-box;
+        max-width: 768px; /* Ancho de la imagen */
     }
-    input[type="text"][disabled] {
-        background-color: #f0f0f0;
+    img {
+        width: 100%;
+        height: auto;
     }
-    a {
-        color: blue;
+    .link-area {
+        position: absolute;
+        width: 20%; /* Ajusta el ancho según la necesidad */
+        height: 5%; /* Ajusta la altura según la necesidad */
+        left: 45%; /* Posición horizontal desde la izquierda del contenedor */
+        top: 80%; /* Posición vertical desde la parte superior del contenedor */
+        background-color: rgba(255, 255, 255, 0.1); /* Transparente */
+        cursor: pointer;
     }
 </style>
-<script>
-    function saveData() {
-        const reservedBy = document.getElementById('reservedBy').value;
-        const date = document.getElementById('date').value;
-        localStorage.setItem('reservedBy', reservedBy);
-        localStorage.setItem('date', date);
-    }
-
-    function loadData() {
-        const storedReservedBy = localStorage.getItem('reservedBy');
-        const storedDate = localStorage.getItem('date');
-        if (storedReservedBy) {
-            document.getElementById('reservedBy').value = storedReservedBy;
-        }
-        if (storedDate) {
-            document.getElementById('date').value = storedDate;
-        }
-    }
-
-    window.onload = loadData;
-</script>
 </head>
 <body>
-<h1>Baby Shower - Maia Sofía 🍼👶</h1>
-<table>
-    <tr>
-        <th>Regalo</th>
-        <th>Enlace</th>
-        <th>Reservado</th>
-        <th>Reservado por</th>
-        <th>Fecha</th>
-    </tr>
-    <tr>
-        <td><input type="text" value="Regalo" disabled></td>
-        <td><a href="#">Ver regalo</a></td>
-        <td><input type="checkbox"></td>
-        <td><input type="text" id="reservedBy" maxlength="30" oninput="saveData()"></td>
-        <td><input type="date" id="date" onchange="saveData()"></td>
-    </tr>
-</table>
+<div class="invitation-container">
+    <img src="Invitacion_Baby_Shower.png" alt="Te invito a mi Baby Shower!">
+    <div><a href="https://www.google.com" class="link-area" target="_blank"></a></div>
+</div>
 </body>
 </html>
