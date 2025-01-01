@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Invitación Baby Shower de Maia Sofía</title>
+<title>Prueba</title>
 <style>
-    /* Establece el estilo para el cuerpo y html para ocupar toda la pantalla */
     body, html {
         height: 100%;
         margin: 0;
@@ -14,7 +13,6 @@
         background-color: black; /* Fondo negro */
     }
 
-    /* Estilos para el contenedor de la imagen */
     .full-screen-image {
         background-image: url('Invitacion_Baby_Shower.png'); /* Ruta de la imagen de fondo */
         background-size: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin cortarse */
@@ -23,24 +21,25 @@
         height: 100vh; /* Altura total de la ventana gráfica */
         width: 100vw; /* Ancho total de la ventana gráfica */
         position: relative; /* Necesario para el posicionamiento del enlace */
+        display: flex;
+        justify-content: center; /* Alinea horizontalmente el contenido */
+        align-items: center; /* Alinea verticalmente el contenido */
     }
 
-    /* Estilo para el enlace posicionado sobre la imagen */
     .gift-link {
-        position: absolute; /* Posiciona absolutamente el enlace sobre la imagen */
-        left: 51%; /* Centra el enlace horizontalmente */
-        top: 83%; /* Posición vertical */
-        transform: translate(-50%, -50%); /* Centra el enlace respecto a sus coordenadas */
-        width: 10vw; /* Anchura del enlace basada en el ancho de la vista */
-        height: 5vh; /* Altura del enlace basada en la altura de la vista */
-        background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente para visualización */
+        position: absolute;
+        width: 10%; /* Anchura del enlace como un porcentaje del contenedor */
+        height: 5%; /* Altura del enlace como un porcentaje del contenedor */
+        left: calc(50% - 5%); /* Ajusta la posición X del enlace */
+        top: calc(80% - 2.5%); /* Ajusta la posición Y del enlace */
+        background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
         cursor: pointer; /* Cambia el cursor para indicar interactividad */
     }
 </style>
 </head>
 <body>
 <div class="full-screen-image">
-    <a href="https://lite.evernote.com/note/c5c27531-96e3-d9da-21b4-bb125d869f4f" class="gift-link" title="Haz clic aquí para ver la lista de regalos"></a>
+    <a href="https://lite.evernote.com/note/c5c27531-96e3-d9da-21b4-bb125d869f4f" class="gift-link"></a>
 </div>
 </body>
 </html>
