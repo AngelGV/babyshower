@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación Baby Shower de Maia Sofía</title>
+<style>
+    /* Establece el estilo para el cuerpo y html para ocupar toda la pantalla */
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Evita barras de desplazamiento innecesarias */
+        background-color: black; /* Fondo negro */
+    }
+
+    /* Estilos para el contenedor de la imagen */
+    .full-screen-image {
+        background-image: url('Invitacion_Baby_Shower.png'); /* Ruta de la imagen de fondo */
+        background-size: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin cortarse */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* No repite la imagen */
+        height: 100vh; /* Altura total de la ventana gráfica */
+        width: 100vw; /* Ancho total de la ventana gráfica */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative; /* Necesario para el posicionamiento del enlace */
+    }
+
+    /* Estilo para el enlace posicionado sobre la imagen */
+    .gift-link {
+        position: absolute; /* Posiciona absolutamente el enlace sobre la imagen */
+        left: 50.5%; /* Centra el enlace horizontalmente - ajustar según sea necesario */
+        top: 83%; /* Posición vertical - ajustar según sea necesario */
+        transform: translate(-50%, -50%); /* Centra el enlace respecto a sus coordenadas */
+        width: 65px; /* Anchura del enlace */
+        height: 25px; /* Altura del enlace */
+        background-color: rgba(255, 255, 255,0.1); /* Fondo semi-transparente para visualización */
+    }
+</style>
+</head>
+<body>
+<div class="full-screen-image">&nbsp; </div>
+<a href="https://lite.evernote.com/note/c5c27531-96e3-d9da-21b4-bb125d869f4f" class="gift-link"></a>
+</body>
+</html>
+
+
