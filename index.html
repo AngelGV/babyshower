@@ -3,43 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prueba</title>
+<title>Prueba 2</title>
 <style>
     body, html {
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow: hidden; /* Evita barras de desplazamiento innecesarias */
-        background-color: black; /* Fondo negro */
-    }
-
-    .full-screen-image {
-        background-image: url('Invitacion_Baby_Shower.png'); /* Ruta de la imagen de fondo */
-        background-size: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin cortarse */
-        background-position: center; /* Centra la imagen en la pantalla */
-        background-repeat: no-repeat; /* No repite la imagen */
-        height: 100vh; /* Altura total de la ventana gráfica */
-        width: 100vw; /* Ancho total de la ventana gráfica */
-        position: relative; /* Necesario para el posicionamiento del enlace */
+        overflow: hidden;
+        background-color: #FFEEC1;
         display: flex;
-        justify-content: center; /* Alinea horizontalmente el contenido */
-        align-items: center; /* Alinea verticalmente el contenido */
+        justify-content: center;
+        align-items: center;
     }
-
-    .gift-link {
+    .invitation-container {
+        position: relative;
+        width: 100%;
+        max-width: 768px; /* Ancho de la imagen */
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .link-area {
         position: absolute;
-        width: 10%; /* Anchura del enlace como un porcentaje del contenedor */
-        height: 5%; /* Altura del enlace como un porcentaje del contenedor */
-        left: calc(50% - 5%); /* Ajusta la posición X del enlace */
-        top: calc(80% - 2.5%); /* Ajusta la posición Y del enlace */
-        background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
-        cursor: pointer; /* Cambia el cursor para indicar interactividad */
+        width: 20%; /* Ajusta el ancho según la necesidad */
+        height: 5%; /* Ajusta la altura según la necesidad */
+        left: 45%; /* Posición horizontal desde la izquierda del contenedor */
+        top: 80%; /* Posición vertical desde la parte superior del contenedor */
+        background-color: rgba(255, 255, 255, 0.5); /* Transparente */
+        cursor: pointer;
     }
 </style>
 </head>
 <body>
-<div class="full-screen-image">
-    <a href="https://lite.evernote.com/note/c5c27531-96e3-d9da-21b4-bb125d869f4f" class="gift-link"></a>
+<div class="invitation-container">
+    <img src="Invitacion_Baby_Shower.png" alt="Invitación Baby Shower">
+    <div><a href="https://www.google.com" class="link-area" target="_blank"></a></div>
 </div>
 </body>
 </html>
